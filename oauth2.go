@@ -83,6 +83,9 @@ type Endpoint struct {
 	// client ID & client secret sent. The zero value means to
 	// auto-detect.
 	AuthStyle AuthStyle
+
+	// AuthURLEscape optionally specifies if the Auth needs to be URL escape or not.
+	AuthURLEscape bool
 }
 
 // AuthStyle represents how requests for tokens are authenticated
